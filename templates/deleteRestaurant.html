@@ -1,0 +1,13 @@
+<html>    
+    <head>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h2>Delete Restaurant</h2>
+        <form action='{{url_for('deleteRestaurant', restaurant_id= restaurant.id)}}' method="post">
+            <label>Name</label>
+            <input type="text" name ="name"/>
+            <input type="submit" value="Delete"/>
+        </form>
+    </body>
+</html>
